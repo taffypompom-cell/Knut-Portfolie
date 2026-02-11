@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knut-Erik-Skatvedt – CV</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <header class="topbar">
+      <div class="brand">
+        <img src="./image.jpg" alt="Knut-Erik-Skatvedt portfolio logo" class="logo-img">
+
+
+        <div class="brand-text">
+          <strong>Knut-Erik-Skatvedt</strong>
+          <span>Portfolio</span>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Hovedmeny">
+        <a href="#cv" class="nav-link active">CV</a>
+        <a href="#info" class="nav-link">Info</a>
+        <a href="#projects" class="nav-link">Prosjekter</a>
+        <a href="#contact" class="nav-link">Kontakt</a>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Åpne meny">☰</button>
+    </header>
+
+    <div class="layout">
+      
+      <aside class="sidebar" id="sidebar">
+        <section class="card" id="info">
+          <div class="photo" aria-label="Profilbilde (placeholder)">
+            <span>FOTO</span>
+          </div>
+
+          <h2 class="card-title">Info</h2>
+          <ul class="list">
+            <li><span class="label">Navn:</span> <span class="value">Lorem Ipsum</span></li>
+            <li><span class="label">Rolle:</span> <span class="value">IT-student</span></li>
+            <li><span class="label">Sted:</span> <span class="value">Drammen</span></li>
+          </ul>
+        </section>
+
+        <section class="card" id="contact">
+          <h2 class="card-title">Kontakt</h2>
+          <ul class="list">
+            <li><span class="label">E-post:</span> <span class="value">lorem@ipsum.com</span></li>
+            <li><span class="label">Telefon:</span> <span class="value">+47 000 00 000</span></li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2 class="card-title">Hvem jeg er</h2>
+          <p class="muted">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Kort tekst her.
+          </p>
+        </section>
+
+        <section class="card">
+          <h2 class="card-title">Status</h2>
+          <div class="tags">
+            <span class="tag">Studerer</span>
+            <span class="tag">Lærer</span>
+            <span class="tag">Søker jobb</span>
+          </div>
+        </section>
+
+        <section class="card" id="projects">
+          <h2 class="card-title">Prosjekter</h2>
+          <div class="projects" id="projectsList">
+            
+          </div>
+
+          <a class="btn btn-ghost" href="#" id="githubBtn" aria-label="Åpne GitHub (placeholder)">
+            GitHub
+          </a>
+        </section>
+      </aside>
+
+      
+      <main class="content" id="cv">
+        <section class="page-title">
+          <h1>CV</h1>
+          <p class="muted"> Jobb-Erfaring, utdanning og korte beskrivelser (Lorem ipsum).</p>
+        </section>
+
+        <section class="card">
+          <div class="section-head">
+            <h2>Erfaring</h2>
+            <button class="btn btn-small" data-toggle="experience">Skjul/Vis</button>
+          </div>
+
+          <div id="experience">
+            <article class="entry">
+              <div class="entry-head">
+                <strong>Stilling / Jobb</strong>
+                <span class="muted">År–År · Firma</span>
+              </div>
+              <ul class="bullets">
+                <li>Ansvar / oppgave (lorem ipsum)</li>
+                <li>Resultat / læring (lorem ipsum)</li>
+              </ul>
+            </article>
+
+            <hr />
+
+            <article class="entry">
+              <div class="entry-head">
+                <strong>Stilling / Jobb</strong>
+                <span class="muted">År–År · Firma</span>
+              </div>
+              <ul class="bullets">
+                <li>Ansvar / oppgave (lorem ipsum)</li>
+                <li>Resultat / læring (lorem ipsum)</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="grid-2">
+          <section class="card">
+            <div class="section-head">
+              <h2>Utdanning</h2>
+              <button class="btn btn-small" data-toggle="education">Skjul/Vis</button>
+            </div>
+
+            <div id="education">
+              <article class="entry">
+                <div class="entry-head">
+                  <strong>Skole / Program</strong>
+                  <span class="muted">År–År</span>
+                </div>
+                <p class="muted">Kort beskrivelse (lorem ipsum)…</p>
+              </article>
+
+              <hr />
+
+              <article class="entry">
+                <div class="entry-head">
+                  <strong>Kurs / Sertifikat</strong>
+                  <span class="muted">År</span>
+                </div>
+                <p class="muted">Kort beskrivelse (lorem ipsum)…</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="card">
+            <h2>Beskrivelser / Notater</h2>
+            <p class="muted">
+              Dette feltet kan brukes som “beskrivelse”-området i skissen. F.eks.
+              nøkkelkompetanse, mål, eller sammendrag.
+            </p>
+            <ul class="bullets">
+              <li>• Nettverk / IT-support</li>
+              <li>• Feilsøking</li>
+              <li>• Kundedialog</li>
+            </ul>
+          </section>
+        </section>
+
+        <footer class="footer">
+          <span class="muted">© Najib Nasery</span>
+        </footer>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
