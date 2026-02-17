@@ -1,0 +1,102 @@
+
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knut-Erik Skatvedt | Kontakt</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="image.jpg" alt="Knut-Erik logo" class="logo-img" />
+      <div class="brand-text">
+        <strong>Knut-Erik Skatvedt</strong>
+        <span>Portfolio</span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a class="nav-link" href="index.html">CV</a>
+      <a class="nav-link" href="info.html">Info</a>
+      <a class="nav-link" href="prosjekter.html">Prosjekter</a>
+      <a class="nav-link active" href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="page-head">
+      <h1>Kontakt</h1>
+      <p>Ta kontakt for samarbeid eller spørsmål.</p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Kontaktinfo</h2>
+        <div class="kv">
+          <div class="k">E-post:</div><div class="v" id="emailText">lorem@ipsum.com</div>
+          <div class="k">Telefon:</div><div class="v">+47 000 00 000</div>
+          <div class="k">Sted:</div><div class="v">Drammen, Norge</div>
+          <div class="k">LinkedIn:</div><div class="v">lorem</div>
+          <div class="k">GitHub:</div><div class="v">lorem</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Send melding</h2>
+
+        <form id="contactForm" class="form">
+          <label>
+            <input type="text" name="name" placeholder="Navn" required />
+          </label>
+
+          <label>
+            <input type="email" name="email" placeholder="E-post" required />
+          </label>
+
+          <label>
+            <input type="text" name="subject" placeholder="Emne" />
+          </label>
+
+          <label>
+            <textarea class="mailbox" name="message" placeholder="Melding" rows="6" required></textarea>
+          </label>
+
+          <div class="actions">
+            <button type="submit" class="btn primary">Send</button>
+            <button type="button" class="btn ghost" id="copyEmailBtn">Kopier e-post</button>
+            <span class="status" id="statusText" aria-live="polite"></span>
+          </div>
+        </form>
+      </div>
+
+      <div class="card map-card">
+        <h2>Lokasjon / Kart</h2>
+        <div class="map">
+          <div class="map-label">MAP</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="social">
+      <div class="social-head">
+        <h2>Sosiale lenker</h2>
+        <p>Hold dette enkelt: 2–3 knapper.</p>
+      </div>
+
+      <div class="card social-card">
+        <a class="pill" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="pill" href="#" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="pill" href="#" target="_blank" rel="noreferrer">Teams</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© Najib Nasery</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

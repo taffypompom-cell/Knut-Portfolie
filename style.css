@@ -1,32 +1,28 @@
-/* =========================
-   GLOBAL VARIABLES (LOGO COLORS)
-   ========================= */
+
 :root {
-  /* Backgrounds */
+  
   --bg: #0b0d10;
   --surface: #111418;
   --card: #141922;
   --border: rgba(255,255,255,0.08);
 
-  /* Text */
+  
   --text: #f1f5f9;
   --muted: #9aa4b2;
 
-  /* Logo colors */
-  --accent: #ff7a18;                 /* orange */
+  
+  --accent: #ff7a18;                 
   --accent-soft: rgba(255,122,24,0.18);
 
-  --accent-2: #22d3ee;               /* cyan */
+  --accent-2: #22d3ee;               
   --accent-2-soft: rgba(34,211,238,0.18);
 
-  /* UI */
+  
   --radius: 14px;
   --shadow: 0 12px 30px rgba(0,0,0,0.45);
 }
 
-/* =========================
-   RESET / BASE
-   ========================= */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -54,9 +50,7 @@ body {
   line-height: 1.6;
 }
 
-/* =========================
-   TOP BAR / HEADER
-   ========================= */
+
 .topbar {
   position: sticky;
   top: 0;
@@ -97,9 +91,7 @@ body {
   font-size: 12px;
 }
 
-/* =========================
-   NAVIGATION
-   ========================= */
+
 .nav {
   margin-left: auto;
   display: flex;
@@ -124,7 +116,7 @@ body {
   border-color: rgba(255,122,24,0.6);
 }
 
-/* Mobile menu button */
+
 .menu-btn {
   display: none;
   margin-left: auto;
@@ -136,9 +128,7 @@ body {
   cursor: pointer;
 }
 
-/* =========================
-   LAYOUT
-   ========================= */
+
 .layout {
   max-width: 1200px;
   margin: 0 auto;
@@ -158,9 +148,7 @@ body {
   gap: 16px;
 }
 
-/* =========================
-   CARDS
-   ========================= */
+
 .card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -174,9 +162,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* =========================
-   TEXT / UTILITIES
-   ========================= */
+
 .muted {
   color: var(--muted);
   font-size: 14px;
@@ -188,9 +174,7 @@ hr {
   margin: 14px 0;
 }
 
-/* =========================
-   PHOTO PLACEHOLDER
-   ========================= */
+
 .photo {
   height: 140px;
   border-radius: 14px;
@@ -201,9 +185,7 @@ hr {
   margin-bottom: 12px;
 }
 
-/* =========================
-   LISTS
-   ========================= */
+
 .list {
   list-style: none;
   display: grid;
@@ -218,9 +200,7 @@ hr {
   color: var(--text);
 }
 
-/* =========================
-   TAGS
-   ========================= */
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -235,9 +215,7 @@ hr {
   background: rgba(255,255,255,0.03);
 }
 
-/* =========================
-   BUTTONS
-   ========================= */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -271,9 +249,7 @@ hr {
   border-radius: 10px;
 }
 
-/* =========================
-   PROJECT MINI CARDS
-   ========================= */
+
 .project-mini {
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -286,9 +262,7 @@ hr {
   margin-bottom: 6px;
 }
 
-/* =========================
-   MAIN CONTENT
-   ========================= */
+
 .page-title h1 {
   font-size: 36px;
 }
@@ -316,18 +290,14 @@ hr {
   color: var(--muted);
 }
 
-/* =========================
-   GRID
-   ========================= */
+
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
 
-/* =========================
-   FOOTER
-   ========================= */
+
 .footer {
   text-align: center;
   padding: 14px;
@@ -335,9 +305,7 @@ hr {
   color: var(--muted);
 }
 
-/* =========================
-   RESPONSIVE
-   ========================= */
+
 @media (max-width: 980px) {
   .layout {
     grid-template-columns: 1fr;
@@ -362,4 +330,153 @@ hr {
   .sidebar.open {
     display: grid;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #041c24, #0b3a3f);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: #ff7a18;
+  color: #000;
+}
+
+.wrap {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.map {
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #ff7a18;
+  color: #000;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.social-links {
+  margin-top: 30px;
+  display: flex;
+  gap: 12px;
+}
+
+.social-links a {
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #ff7a18;
+  color: #000;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.mailbox{
+  padding: 17px;
 }
