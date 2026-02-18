@@ -1,6 +1,6 @@
 "use strict";
 
-// Mini data for the sidebar projects list (matches the sketch: projects + github link)
+
 const projects = [
   { title: "Prosjekt 1", tech: "HTML/CSS", github: "#", live: "#" },
   { title: "Prosjekt 2", tech: "Nettverk", github: "#", live: "#" },
@@ -52,7 +52,7 @@ function setupNavScrollSpy() {
 
   sections.forEach((s) => observer.observe(s));
 
-  // Smooth scroll
+  
   links.forEach((a) => {
     a.addEventListener("click", (e) => {
       const href = a.getAttribute("href");
@@ -101,7 +101,6 @@ function main() {
   setupToggles();
   setupMobileSidebar();
 
-  // Placeholder GitHub button
   const githubBtn = document.getElementById("githubBtn");
   if (githubBtn) {
     githubBtn.addEventListener("click", (e) => {
