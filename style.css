@@ -203,7 +203,9 @@ hr{
   background: var(--accent-2-soft);
 }
 
-.btn-ghost:hover{ background: rgba(34,211,238,0.28); }
+.btn-ghost:hover{ background: rgba(34,211,238,0.28);
+margin-top: 10px;
+}
 
 .btn-small{
   padding: 8px 10px;
